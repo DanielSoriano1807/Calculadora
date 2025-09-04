@@ -7,6 +7,7 @@ public class Menu {
     public int getA() {
         return a;
     }
+
     public void setA(int a) {
         this.a = a;
     }
@@ -27,9 +28,10 @@ public class Menu {
         this.res = res;
     }
 
-    public Menu() {}
+    public Menu() {
+    }
 
-    public void sumar () {
+    public void sumar() {
         Scanner sc = new Scanner(System.in);
         int v;
         System.out.println("Ingresa el primer numero para sumar: ");
@@ -45,7 +47,7 @@ public class Menu {
         System.out.println(getA() + " + " + getB() + " = " + getRes());
     }
 
-     public void resta () {
+    public void resta() {
         Scanner oe = new Scanner(System.in);
         int v;
         System.out.println("Ingresa el primer numero para restar: ");
@@ -60,7 +62,7 @@ public class Menu {
         System.out.println(getA() + " - " + getB() + " = " + getRes());
     }
 
-    public void multiplicacion () {
+    public void multiplicacion() {
         Scanner pe = new Scanner(System.in);
         int v;
         System.out.println("Ingresa el primer numero para multiplicar: ");
@@ -74,3 +76,21 @@ public class Menu {
         setRes(v);
         System.out.println(getA() + " * " + getB() + " = " + getRes());
     }
+
+    public void division() {
+        Scanner po = new Scanner(System.in);
+        int v;
+        System.out.println("Ingresa el primer numero para dividir: ");
+        setA(po.nextInt());
+        po.nextLine();
+
+        System.out.println("Ingresa el segundo numero para dividir: ");
+        setB(po.nextInt());
+        po.nextLine();
+        v = a / b;
+        setRes(v);
+
+        System.out.println(getA() + " / " + getB() + " = " + getRes());
+    }
+
+}
