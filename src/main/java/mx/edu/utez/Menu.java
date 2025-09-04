@@ -44,3 +44,18 @@ public class Menu {
         setRes(v);
         System.out.println(getA() + " + " + getB() + " = " + getRes());
     }
+
+     public void resta () {
+        Scanner oe = new Scanner(System.in);
+        int v;
+        System.out.println("Ingresa el primer numero para restar: ");
+        setA(oe.nextInt());
+        oe.nextLine();
+
+        System.out.println("Ingresa el segundo numero para restar: ");
+        setB(oe.nextInt());
+        oe.nextLine();
+        v = a - b;
+        setRes(v);
+        System.out.println(getA() + " - " + getB() + " = " + getRes());
+    }
