@@ -2,29 +2,29 @@ package mx.edu.utez;
 import java.util.Scanner;
 
 public class Menu {
-    private int a, b, res;
+    private float a, b, res;
 
-    public int getA() {
+    public float getA() {
         return a;
     }
 
-    public void setA(int a) {
+    public void setA(float a) {
         this.a = a;
     }
 
-    public int getB() {
+    public float getB() {
         return b;
     }
 
-    public void setB(int b) {
+    public void setB(float b) {
         this.b = b;
     }
 
-    public int getRes() {
+    public float getRes() {
         return res;
     }
 
-    public void setRes(int res) {
+    public void setRes(float res) {
         this.res = res;
     }
 
@@ -33,13 +33,13 @@ public class Menu {
 
     public void sumar() {
         Scanner sc = new Scanner(System.in);
-        int v;
+        float v;
         System.out.println("Ingresa el primer numero para sumar: ");
-        setA(sc.nextInt());
+        setA(sc.nextFloat());
         sc.nextLine();
 
         System.out.println("Ingresa el segundo numero para sumar: ");
-        setB(sc.nextInt());
+        setB(sc.nextFloat());
         sc.nextLine();
 
         v = a + b;
@@ -49,13 +49,13 @@ public class Menu {
 
     public void resta() {
         Scanner oe = new Scanner(System.in);
-        int v;
+        float v;
         System.out.println("Ingresa el primer numero para restar: ");
-        setA(oe.nextInt());
+        setA(oe.nextFloat());
         oe.nextLine();
 
         System.out.println("Ingresa el segundo numero para restar: ");
-        setB(oe.nextInt());
+        setB(oe.nextFloat());
         oe.nextLine();
         v = a - b;
         setRes(v);
@@ -64,9 +64,9 @@ public class Menu {
 
     public void multiplicacion() {
         Scanner pe = new Scanner(System.in);
-        int v;
+        float v;
         System.out.println("Ingresa el primer numero para multiplicar: ");
-        setA(pe.nextInt());
+        setA(pe.nextFloat());
         pe.nextLine();
 
         System.out.println("Ingresa el segundo numero para multiplicar: ");
@@ -79,7 +79,7 @@ public class Menu {
 
     public void division() {
         Scanner po = new Scanner(System.in);
-        int v;
+        float v;
         System.out.println("Ingresa el primer numero para dividir: ");
         setA(po.nextInt());
         po.nextLine();

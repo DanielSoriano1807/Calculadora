@@ -3,7 +3,7 @@ package mx.edu.utez;
 import mx.edu.utez.Menu;
 import java.util.Scanner;
 
-public class Main {
+public class 11Main {
 
     public static void main(String[] args) {
         Menu menu = new Menu();
